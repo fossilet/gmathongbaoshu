@@ -5,3 +5,4 @@
 
 <Gmat单词.tsv gsed -e '/^list[0-9]\+/d' -e '/^[^a-zA-Z]/d' |
     cut -d'	' -f1 | gshuf | split -l 250
+gsed -i '/^list[0-9]\+/d' Gmat单词.tsv
